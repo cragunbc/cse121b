@@ -22,6 +22,9 @@ const displayPlayers = (players) => {
         image.setAttribute("alt", player.playerName);
         article.appendChild(playerName);
         article.appendChild(image);
+        article.appendChild(playerNumber);
+        article.appendChild(playerPosition);
+        article.appendChild(playerCountry);
 
         playersElement.appendChild(article);
 
