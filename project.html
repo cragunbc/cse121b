@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSE 121b | W06: Programming Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src=""></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/project.css">
+</head>
+
+<body>
+  <nav>
+    <ul id="menu">
+      <li><a id="toggleMenu">&equiv;</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="w01-task.html">W1 Task</a></li>
+      <li><a href="w03-task.html">W3 Task</a></li>
+      <li><a href="w04-task.html">W4 Task</a></li>
+      <li><a href="w05-task.html">W5 Task</a></li>
+      <li><a href="project.html" class="active">Project</a></li>
+    </ul>
+  </nav>
+  <main id="grid">
+    <h1>W06: Project</h1>
+    <h2 id="pagetitle"></h2>
+
+    <select id="sortBy" title="Choose a data filter.">
+      <option value="" disabled selected>Filter Players</option>
+      <option value="all">All Players</option>
+      <option value="USA">Players from the USA</option>
+      <option value="International">International Players</option>
+      <option value="tall">Players 7ft tall and higher</option>
+      <option value="short">Players shorter then 7ft</option>
+      <option value="guard">Guards</option>
+      <option value="forward">Forwards</option>
+      <option value="center">Centers</option>
+      <option value="highPoints">Averages 15 points or more</option>
+      <option value="highRebounds">Averages 4 or more rebounds a game</option>
+      <option value="highAssist">Averages 4 or more assits a game</option>
+      <option value="longPro">Been in the league 5 years or more</option>
+    </select>
+
+    <div id="players">
+    </div>
+  </main>
+
+
+  <footer>
+    &copy;<span id="year"></span> | Week 06 - Utah Jazz Roster Project | CSE 121b
+  </footer>
+  <script src="scripts/main.js"></script>
+  <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
+  <script src="scripts/project.js" type="module"></script>
+</body>
+
+</html>
